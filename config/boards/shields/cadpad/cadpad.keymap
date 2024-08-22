@@ -4,6 +4,31 @@
 
 &left_encoder { status = "okay"; };
 
+
+
+
+
+
+/ {
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+};
+
+
+
+
+
+
+
 / {
 
 
@@ -13,7 +38,7 @@
 
         default_layer { // Layer 0
             bindings = <
-                                    &kp ESC         &kp M           &kp C
+                                    &kp ESC         &zed_em_kay     &kp C
                                     &kp KP_N7       &kp KP_N8       &kp KP_N9
                                     &kp KP_N4       &kp KP_N5       &kp KP_N6
                                     &kp KP_N1       &kp KP_N2       &kp KP_N3
