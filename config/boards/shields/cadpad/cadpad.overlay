@@ -1,5 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
+    &left_encoder {
+        status = "okay";
+    };
+
+
 / {
     chosen {
                 zmk,kscan = &kscan0;
@@ -42,9 +47,7 @@
             >;
     };   
 
-    &left_encoder {
-        status = "okay";
-    };
+
 
 
     left_encoder: encoder_left {
