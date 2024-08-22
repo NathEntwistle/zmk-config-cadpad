@@ -42,7 +42,9 @@
             >;
     };   
 
-
+    &left_encoder {
+        status = "okay";
+    };
 
 
     left_encoder: encoder_left {
@@ -52,10 +54,10 @@
         steps = <80>;
         status = "disabled";
     };
-    
+
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
+        sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
 
