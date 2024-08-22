@@ -41,9 +41,7 @@
             >;
     };   
 
-&left_encoder {
-    status = "okay";
-};
+
 
 
     left_encoder: encoder_left {
@@ -55,4 +53,8 @@
     };
 
 
+};
+
+&left_encoder {
+    status = "okay";
 };
