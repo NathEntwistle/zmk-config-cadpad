@@ -30,6 +30,19 @@
 
 
     };
+
+        dim: dim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_wait_time 100>,
+                <&macro_tap &kp D &kp ENTER>;
+
+
+
+    };
+
+
 };
 
 
@@ -62,7 +75,7 @@
                                     &kp F7          &kp F8          &kp F9
                                     &kp F4          &kp F5          &kp F6
                                     &kp F1          &kp F2          &kp F3
-                    &kp D           &trans          &kp KP_DOT      &kp DEL  
+                    &dim            &trans          &kp KP_DOT      &kp DEL  
                     >;          
                 
                  };
