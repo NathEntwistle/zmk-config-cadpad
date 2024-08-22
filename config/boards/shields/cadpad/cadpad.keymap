@@ -4,8 +4,12 @@
 
 &left_encoder { status = "okay"; };
 
-{
-    macros {
+
+
+
+/ {
+
+macros {
         zed_em_kay: zed_em_kay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -16,14 +20,17 @@
                 ;
         };
     };
-};
 
 
 
 
 
 
-/ {
+
+
+
+
+
     keymap {
         compatible = "zmk,keymap";
 
