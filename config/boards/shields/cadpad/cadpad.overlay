@@ -4,6 +4,7 @@
     chosen {
                 zmk,kscan = &kscan0;
                 zmk,matrix_transform = &default_transform;
+                
 
     };
 
@@ -51,7 +52,12 @@
         steps = <80>;
         status = "disabled";
     };
-
+    
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
 
 
 };
