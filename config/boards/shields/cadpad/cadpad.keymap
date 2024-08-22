@@ -6,6 +6,9 @@
     keymap {
         compatible = "zmk,keymap";
 
+sensor-bindings = <&inc_dec_kp &kp KP_N1 &kp KP_N5>;
+
+
         default_layer { // Layer 00
             bindings = <
                                     &kp ESC         &kp M           &kp C
@@ -37,8 +40,6 @@
                     >;
                     
                   };   
-
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
              };
 
