@@ -3,4 +3,9 @@ if SHIELD_CADPAD
 config ZMK_KEYBOARD_NAME
     default "cadpad"
 
+# Uncomment to enable encoder
+CONFIG_EC11=y
+CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y
+
+
     endif
